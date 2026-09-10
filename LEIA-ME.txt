@@ -1,0 +1,20 @@
+RÁDIO BOLEIROS DE CRISTO GOSPEL
+================================
+
+1. Abra index.html no navegador para testar o site.
+2. Para a transmissão funcionar, substitua:
+   COLE_AQUI_O_LINK_DO_STREAM.mp3
+   pelo endereço real da transmissão.
+3. Para os pedidos de oração, substitua:
+   COLE_AQUI_O_NUMERO_COM_DDD
+   pelo WhatsApp oficial, somente números (ex.: 5518999999999).
+4. Substitua os links de Instagram, Facebook e YouTube pelos canais oficiais.
+5. O site é estático e pode ser publicado em serviços de hospedagem gratuita.
+
+A logo enviada pelo responsável pelo projeto foi incluída como logo.png.
+
+
+ATUALIZAÇÃO AO VIVO
+O botão OUÇA AO VIVO foi configurado para abrir a página oficial da rádio no Listen2MyRadio.
+A conta gratuita do Listen2MyRadio não permite incorporar o player diretamente em outro site.
+

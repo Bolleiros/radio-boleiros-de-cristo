@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#071a35">
+<meta name="description" content="Rádio Boleiros de Cristo Gospel — música, palavra de Deus, oração e informação.">
+<title>Rádio Boleiros de Cristo Gospel</title>
+<style>
+:root{--bg:#061326;--card:#0b203b;--card2:#102b4d;--text:#fff;--muted:#a9bfd5;--blue:#11b9f5;--blue2:#0877d1;--line:#1d4e7c;--green:#19b96b}
+*{box-sizing:border-box;scroll-behavior:smooth}body{margin:0;background:linear-gradient(180deg,#061326,#081a30 45%,#061326);color:var(--text);font-family:Arial,Helvetica,sans-serif}
+a{text-decoration:none;color:inherit}.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:#061326ee;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{height:70px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:10px;font-weight:800}.brand img{width:52px;height:52px;object-fit:contain}.brand span{font-size:15px}.menu{display:flex;gap:20px;font-size:14px;color:var(--muted)}.menu a:hover{color:var(--blue)}
+.hero{padding:55px 0 35px;text-align:center;background:radial-gradient(circle at 50% 10%,#0b4d7d55,transparent 45%)}
+.hero img{width:min(270px,70vw);max-height:270px;object-fit:contain}.hero h1{font-size:clamp(30px,5vw,54px);margin:12px 0 8px}.hero p{color:var(--muted);font-size:18px;margin:0}
+.live{margin:25px auto 50px;background:linear-gradient(135deg,#0b2949,#081a31);border:1px solid #1d71aa;border-radius:26px;padding:28px;max-width:850px;box-shadow:0 18px 55px #0008;text-align:center}
+.badge{display:inline-flex;align-items:center;gap:8px;background:#172d46;border:1px solid var(--line);padding:7px 13px;border-radius:30px;color:#bfeaff;font-size:13px}.dot{width:9px;height:9px;border-radius:50%;background:#ff3434;box-shadow:0 0 12px #ff3434}
+.live h2{margin:15px 0 5px;color:var(--blue)}.live p{color:var(--muted)}audio{width:100%;margin:18px 0}
+.controls{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}.btn{border:0;border-radius:30px;padding:13px 20px;font-weight:700;cursor:pointer;background:var(--blue);color:#001525}.btn.secondary{background:#173a5e;color:white;border:1px solid var(--line)}
+section{padding:45px 0}.title{text-align:center;margin-bottom:25px}.title h2{font-size:30px;margin:0 0 8px}.title p{color:var(--muted);margin:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px}.card h3{margin-top:0;color:var(--blue)}.card p{color:var(--muted);line-height:1.55}
+.schedule{overflow:hidden;border-radius:18px;border:1px solid var(--line)}.row{display:grid;grid-template-columns:100px 1fr 120px;padding:15px 18px;border-bottom:1px solid #173955;background:var(--card)}.row:last-child{border:0}.row.head{background:var(--card2);font-weight:800;color:var(--blue)}.time{font-weight:800}.small{font-size:13px;color:var(--muted)}
+form{display:grid;gap:12px;max-width:720px;margin:auto}.formrow{display:grid;grid-template-columns:1fr 1fr;gap:12px}input,textarea{width:100%;padding:14px;border-radius:12px;border:1px solid var(--line);background:#06172b;color:white;font-size:15px}textarea{min-height:120px;resize:vertical}
+.social{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.social a{background:#102b4d;border:1px solid var(--line);padding:12px 18px;border-radius:30px}.whats{background:var(--green)!important;border-color:var(--green)!important}
+footer{border-top:1px solid var(--line);padding:35px 0;text-align:center;color:var(--muted)}footer strong{color:white}
+@media(max-width:700px){.menu{display:none}.row{grid-template-columns:80px 1fr 80px;font-size:14px}.formrow{grid-template-columns:1fr}.hero{padding-top:35px}}
+</style>
+</head>
+<body>
+
+<header><div class="container nav">
+<a class="brand" href="#inicio"><img src="logo.png"><span>RÁDIO BOLEIROS DE CRISTO</span></a>
+<nav class="menu"><a href="#radio">Ao vivo</a><a href="#programacao">Programação</a><a href="#oracao">Oração</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a></nav>
+</div></header>
+
+<main id="inicio">
+<section class="hero">
+<img src="logo.png" alt="Boleiros de Cristo">
+<h1>Rádio Boleiros de Cristo Gospel</h1>
+<p>Fé • Música • Palavra de Deus • Oração • Esperança</p>
+</section>
+
+<section id="radio" class="container">
+<div class="live">
+<div class="badge"><span class="dot"></span> TRANSMISSÃO AO VIVO</div>
+<h2>📻 Ouça a Rádio</h2>
+<p id="status">A rádio está transmitindo ao vivo pelo Listen2MyRadio.</p>
+<div class="controls">
+<a class="btn" href="https://boleirosdecristo.radio12345.com" target="_blank" rel="noopener">▶ OUÇA AO VIVO</a>
+<button class="btn secondary" onclick="shareRadio()">↗ Compartilhar</button>
+</div>
+<p class="small">Ao clicar em “OUÇA AO VIVO”, a página oficial da rádio será aberta para você ouvir a transmissão.</p>
+</div>
+</section>
+
+<section id="programacao" class="container">
+<div class="title"><h2>📅 Programação</h2><p>Uma grade inicial que você pode personalizar.</p></div>
+<div class="schedule">
+<div class="row head"><div>Horário</div><div>Programa</div><div>Categoria</div></div>
+<div class="row"><div class="time">06h</div><div>Bom Dia com Deus<br><span class="small">Palavra e louvores para começar o dia</span></div><div>Devocional</div></div>
+<div class="row"><div class="time">09h</div><div>Louvor Gospel<br><span class="small">Seleção de músicas gospel</span></div><div>Música</div></div>
+<div class="row"><div class="time">12h</div><div>Palavra de Deus<br><span class="small">Mensagem, reflexão e oração</span></div><div>Palavra</div></div>
+<div class="row"><div class="time">15h</div><div>Gospel & Família<br><span class="small">Música e conteúdo para toda a família</span></div><div>Família</div></div>
+<div class="row"><div class="time">18h</div><div>Louvor e Adoração<br><span class="small">Momento especial de adoração</span></div><div>Louvor</div></div>
+<div class="row"><div class="time">21h</div><div>Noite de Oração<br><span class="small">Pedidos, oração e mensagens</span></div><div>Oração</div></div>
+</div>
+</section>
+
+<section id="oracao" class="container">
+<div class="title"><h2>🙏 Pedido de oração</h2><p>Escreva seu pedido. O botão prepara a mensagem para o WhatsApp.</p></div>
+<form onsubmit="sendPrayer(event)">
+<div class="formrow"><input id="nome" placeholder="Seu nome" required><input id="pedido" placeholder="Tema do pedido" required></div>
+<textarea id="mensagem" placeholder="Escreva seu pedido de oração..." required></textarea>
+<button class="btn" type="submit">Enviar pedido pelo WhatsApp</button>
+<p class="small">Antes de publicar, substitua o número de WhatsApp no código pelo número oficial da rádio.</p>
+</form>
+</section>
+
+<section id="sobre" class="container">
+<div class="title"><h2>⚽✝️ Boleiros de Cristo</h2><p>Esporte, amizade e valores cristãos.</p></div>
+<div class="grid">
+<div class="card"><h3>Quem somos</h3><p>Espaço para apresentar a Associação Pais e Amigos Boleiros de Cristo e o trabalho social desenvolvido.</p></div>
+<div class="card"><h3>Missão</h3><p>Levar uma mensagem de fé, esperança e transformação por meio do esporte, da música e da Palavra de Deus.</p></div>
+<div class="card"><h3>Participe</h3><p>Divulgue a rádio, envie pedidos de oração e acompanhe a programação.</p></div>
+</div>
+</section>
+
+<section id="contato" class="container">
+<div class="title"><h2>📲 Fale conosco</h2><p>Adicione aqui os canais oficiais da rádio.</p></div>
+<div class="social">
+<a class="whats" href="https://wa.me/" target="_blank">WhatsApp</a>
+<a href="#" onclick="alert('Adicione aqui o Instagram oficial.');return false;">Instagram</a>
+<a href="#" onclick="alert('Adicione aqui o Facebook oficial.');return false;">Facebook</a>
+<a href="#" onclick="alert('Adicione aqui o YouTube oficial.');return false;">YouTube</a>
+</div>
+</section>
+</main>
+
+<footer><div class="container">
+<strong>Rádio Boleiros de Cristo Gospel</strong><br>
+Associação Pais e Amigos Boleiros de Cristo • 2026<br><br>
+<span>Fé • Música • Palavra de Deus • Oração</span>
+</div></footer>
+
+<script>
+const STATION_URL="https://boleirosdecristo.radio12345.com";
+const WHATSAPP="COLE_AQUI_O_NUMERO_COM_DDD";
+function shareRadio(){if(navigator.share){navigator.share({title:'Rádio Boleiros de Cristo Gospel',text:'Ouça a Rádio Boleiros de Cristo Gospel!',url:location.href});}else{navigator.clipboard?.writeText(location.href);alert('Link copiado!');}}
+function sendPrayer(e){
+ e.preventDefault();
+ const nome=document.getElementById('nome').value, pedido=document.getElementById('pedido').value, msg=document.getElementById('mensagem').value;
+ const text=`🙏 PEDIDO DE ORAÇÃO - Rádio Boleiros de Cristo Gospel%0A%0ANome: ${encodeURIComponent(nome)}%0ATema: ${encodeURIComponent(pedido)}%0APedido: ${encodeURIComponent(msg)}`;
+ if(WHATSAPP.includes('COLE_AQUI')) alert('Configure primeiro o número de WhatsApp no arquivo index.html.');
+ else window.open(`https://wa.me/${WHATSAPP}?text=${text}`,'_blank');
+}
+</script>
+</body>
+</html>
